@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trabalhando com git merge</title>
+        <title>Sorteio de camiseta do Brasil</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
-            <header>MEU LOGO</header>
+            <header>SORTEIO</header>
             <section class="nav-items">
                 <a href="#home">Home</a>
                 <a href="#">Sobre</a>
@@ -19,11 +19,11 @@
         <section id="home">
             <div class="container">
                 <div class="column-left">
-                    <h1>Trabalhando com git com rebase</h1>
+                    <h1>Quer ganhar uma camiseta igual essa?</h1>
                     <p>
-                        Entre em contato pelo formulário para saber mais sobre aplicações de excelência.
+                        Responda o formulário abaixo para participar do sorteio!
                     </p>
-                    <a href="#form" id="CTA-button">Comece agora!</a>
+                    <a href="#form" id="CTA-button">Responda já!</a>
                 </div>
                 <picture class="column-right">
                 <img src="image.gif" alt="illustration" id="home-image">
@@ -33,39 +33,41 @@
 
         <form id="form" action="http://duck.com">
             <section>
-                <h2>Formulário de Interesses</h2>
+                <h2>Formulário do sorteio</h2>
                 <p>
                     Digite seu nome:
-                    <input type="text" name="userName" size="40" maxlength="50" placeholder="Digite seu Nome Completo">
+                    <input type="text" name="userName" size="40" maxlength="50" placeholder="Nome completo">
                 </p>
                 <p>
                     Digite sua profissão:
-                    <input type="text" name="userJob" size="40" maxlength="40" placeholder="Digite sua profissão">
+                    <input type="text" name="userJob" size="40" maxlength="40" placeholder="Qual sua profissão">
                 </p>
                 <p>
-                    Nos conte um pouquinho sobre você:
-                    <textarea name="userComment" cols="30" rows="4"></textarea>
-                </p>
-                <p>
-                    Você faz exercícios regularmente?
-                    <input type="radio" name="exercise" value="1">Sim
-                    <input type="radio" name="exercise" value="1">Não
-                    <p>Por onde você le sobre seus tópicos favoritos?</p>
+                    Por onde você se informa sobre futebol?</p>
                     <input type="checkbox" name="Books">Livros
                     <input type="checkbox" name="Web">Sites
                     <input type="checkbox" name="Apps">Aplicativos
                     <input type="checkbox" name="Magazines">Revistas
                 </p>
                 <p>
-                    Qual gênero de filmes você mais gosta?
+                    Qual jogador abaixo você mais gosta?
                     <select name="moviePref">
                         <option></option>
-                        <option value="1">Comédia</option>
-                        <option value="2">Terror</option>
-                        <option value="3">Drama</option>
-                        <option value="4">Romance</option>
-                        <option value="5">Ação</option>
+                        <option value="1">Neymar Jr.</option>
+                        <option value="2">Vinícius Júnior</option>
+                        <option value="3">Dani Alves</option>
+                        <option value="4">Thiago Silva</option>
+                        <option value="5">Nenhum dos anteriores</option>
                     </select>
+                </p>
+                <p>
+                    Nos conte porque você deveria ganhar essa camiseta:
+                    <textarea name="userComment" cols="30" rows="4"></textarea>
+                </p>
+                <p>
+                    Você vai assistir a Copa do Mundo do Qatar 2022?
+                    <input type="radio" name="exercise" value="1">Sim
+                    <input type="radio" name="exercise" value="1">Não
                 </p>
                 <input id="form-button" type="submit" value="ENVIAR">
             </section>
