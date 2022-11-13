@@ -45,7 +45,7 @@ h2 {
 form {
     display: flex;
     align-self: center;
-    height: 95vh;
+    height: 100vh;
     background-color: #222222;
     color: #fff;
     padding: 8vh 30vw;
@@ -94,6 +94,11 @@ input, select, textarea {
 #home-image {
     width: 100%;
     height: 100%;
+}
+
+.containerAbout {
+    display: flex;
+    height: 100vh;
 }
 
 #form-button {
