@@ -97,8 +97,41 @@ input, select, textarea {
 }
 
 .containerAbout {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
+    padding: 3rem 15vw;
+}
+
+.columnleftAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #222222;
+    padding: 0rem 2rem;
+}
+
+.columnleftAbout h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.columnleftAbout p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.columnrightAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-image {
+    width: 100%;
+    height: 100%;
 }
 
 #form-button {
