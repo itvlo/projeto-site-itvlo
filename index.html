@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sorteio de camiseta do Brasil</title>
+        <title>Sorteio do Brasil</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
@@ -19,16 +19,16 @@
         </nav>
 
         <section id="home">
-            <div class="container">
+            <div class="containerHome">
                 <div class="column-left">
                     <h1>Quer ganhar uma camiseta igual essa?</h1>
                     <p>
-                        Responda o formulário abaixo para participar do sorteio!
+                        Responda o formulário abaixo e participe do sorteio!
                     </p>
                     <a href="#form" id="CTA-button">Responda já!</a>
                 </div>
                 <picture class="column-right">
-                <img src="camiseta.png" alt="Camiseta da CBF" id="home-image">
+                <img src="camiseta1.png" alt="Camiseta da CBF" id="home-image">
                 </picture>
             </div>
         </section>
@@ -36,13 +36,14 @@
         <section id="about">
             <div class="containerAbout">
                 <div class="columnleftAbout">
-                    <h1>Sobre esse site</h1>
-                    <p>Me chamo Italo Augusto</p>
-                </div>
-                <div class="columnrightAbout">
                     <picture>
-                        <img src="" alt="Memoji Italo" class="about-image">
+                        <img src="13.webp" alt="Memoji Italo" class="about-image">
                     </picture>
+                    <div class="columnrightAbout">
+                        <h1>Sobre Italo Augusto</h1>
+                        <p>Sou um jovem de 25 anos, preto, nascido na periferia de São Paulo e curioso desde criança, sempre tive facilidade em explorar tecnologias que estão ao meu alcance.</p>
+                        <p>Meu objetivo é me tornar um profissional em desenvolvimento web, no momento tenho estudado HTML, CSS e Javascript.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,17 +51,17 @@
         <form id="form" action="https://github.com/itvlo">
             <section>
                 <h2>Formulário do sorteio</h2>
-                <p>
-                    Seu nome:
+                <div>
+                    <label for="input">Seu nome:</label>
                     <input type="text" name="userName" size="40" maxlength="50" placeholder="Nome e sobrenome">
-                </p>
-                <p>
-                    Seu e-mail:
+                </div>
+                <div>
+                    <label for="input">Seu e-mail:</label>
                     <input type="mail" name="userMail" size="40" maxlength="40" placeholder="exemplo@exemplo.com">
-                </p>
-                <p>
-                    Qual jogador abaixo você mais gosta?
-                    <select name="moviePref">
+                </div>
+                <div>
+                    <label for="select">Qual jogador da seleção brasileira você mais gosta?</label>
+                    <select name="playerPref">
                         <option></option>
                         <option value="1">Neymar Jr.</option>
                         <option value="2">Vinícius Júnior</option>
@@ -68,21 +69,23 @@
                         <option value="4">Thiago Silva</option>
                         <option value="5">Nenhum dos anteriores</option>
                     </select>
-                </p>
-                <p>
-                    Nos conte porque você deveria ganhar essa camiseta:
+                </div>
+                <div>
+                    <label for="textarea">Nos conte porque você deveria ganhar essa camiseta:</label>
                     <textarea name="userComment" cols="30" rows="4" placeholder="Use no mínimo 3 parágrafos"></textarea>
-                </p>
-                <p>
-                    Você vai assistir a Copa do Mundo do Qatar 2022?
-                    <input type="radio" name="exercise" value="1">Sim
-                    <input type="radio" name="exercise" value="1">Não
-                </p>
+                </div>
+                <div class="radiogroup">
+                    <label for="radio">Você estará no Brasil durante a Copa do Mundo 2022?</label>
+                    <input type="radio" name="exercise" value="1" id="radio">
+                    Sim
+                    <input type="radio" name="exercise" value="1" id="radio">
+                    Não
+                </div>
                 <input id="form-button" type="submit" value="ENVIAR">
             </section>
         </form>
         <footer>
-            <p>Site criado para estudos por Italo Augusto</p>
+            <p>Site criado e mantido para estudos por <a href="https://www.linkedin.com/in/italo-augusto" target="_blank">Italo Augusto</a></p>
         </footer>
     </body>
 </html>
