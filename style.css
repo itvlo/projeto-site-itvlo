@@ -140,40 +140,35 @@ nav a:hover {
 form {
     display: flex;
     align-self: center;
-    height: 90vh;
+    height: 100vh;
     background-color: var(--fundoAzul);
     color: #fff;
     padding: 8vh 30vw;
 }
 
+
 form > section {
-    padding: 5%;
+    padding: 2%;
     border-radius: 20px;
     background-color: #00000040;
 }
 
-div.radiogroup {
-    width: 35vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 input, select, textarea {
     width: 40vw;
+    padding: 1%;
     display: block;
     padding: 0.5rem 0.75rem;
     border-radius: 10px;
 }
 
 form h2 {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 2rem;
 }
 
 #form-button {
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
@@ -181,6 +176,7 @@ form h2 {
     color: white;
     cursor: pointer;
     border-radius: 50px;
+    text-decoration: none;
 }
 
 #form-button:hover {
@@ -188,7 +184,6 @@ form h2 {
     background: var(--fundoAmarelo);
     transition: 0.3s;
 }
-
 
 footer {
     background-color: var(--fundoAzul);
